@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: customers
+    description: "Customers Table"
+    columns:
+      - name: id
+        description: "Pk da Tabela"
+        tests:
+          - unique
+      - name: first_name
+        description: "Nome do Cliente"
+        tests:
+          - not_null
+      - name: last_name
+        description: "Sobrenome do Cliente"
+        tests:
+          - not_null
